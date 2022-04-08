@@ -1,8 +1,0 @@
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\bin\Debug\ExercicioProposto6.exe.config
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\bin\Debug\ExercicioProposto6.exe
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\bin\Debug\ExercicioProposto6.pdb
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\obj\Debug\ExercicioProposto6.csproj.AssemblyReference.cache
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\obj\Debug\ExercicioProposto6.csproj.SuggestedBindingRedirects.cache
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\obj\Debug\ExercicioProposto6.csproj.CoreCompileInputs.cache
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\obj\Debug\ExercicioProposto6.exe
-E:\Repositórios\CSharp COMPLETO Programação Orientada a Objetos + Projetos\ExercicioProposto6\ExercicioProposto6\obj\Debug\ExercicioProposto6.pdb
