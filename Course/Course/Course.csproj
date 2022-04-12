@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Enums\WorkerLevel.cs" />
-    <Compile Include="Entities\Department.cs" />
-    <Compile Include="Entities\HourContract.cs" />
-    <Compile Include="Entities\Worker.cs" />
+    <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
