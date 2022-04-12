@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExercicioProposto9")]
+[assembly: AssemblyTitle("ExercicioProposto10")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExercicioProposto9")]
+[assembly: AssemblyProduct("ExercicioProposto10")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b239445c-fc89-4d8d-a5e1-6349c0fd24de")]
+[assembly: Guid("cfb4278c-9803-4e3d-8d06-ccf97d6c37e9")]
 
 // Version information for an assembly consists of the following four values:
 //
