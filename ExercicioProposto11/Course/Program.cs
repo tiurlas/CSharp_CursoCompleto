@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Course.Entities;
 
 namespace Course
 {
@@ -11,6 +9,7 @@ namespace Course
     {
         static void Main(string[] args)
         {
+            List<TaxPayer> list = new List<TaxPayer>();
 
             Console.Write("Enter the number of tax payers: ");
             int n = int.Parse(Console.ReadLine());
@@ -27,18 +26,34 @@ namespace Course
                 if (c == 'i')
                 {
                     Console.Write("Health expenditures: ");
-                    double valueIndividual = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    double healthExpenditures = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    list.Add(new Individual(name, values, healthExpenditures));
                 }
                 else
                 {
                     Console.Write("Number of employees: ");
-                    int employees = int.Parse(Console.ReadLine());
+                    int numberOfEmployees = int.Parse(Console.ReadLine());
+                    list.Add(new Company(name, values, numberOfEmployees));
                 }
             }
 
             Console.WriteLine();
             Console.WriteLine("TAXES PAID:");
-            
+            foreach (TaxPayer taxPayer in list)
+            {
+                Console.WriteLine(taxPayer.Name
+                    + ": $ "
+                    + taxPayer.Tax().ToString("F2", CultureInfo.InvariantCulture));
+            }
+
+            double sum = 0.0 ;
+            foreach (TaxPayer taxPayer in list)
+            {
+                sum += taxPayer.Tax();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("TOTAL TAXES: $ " + sum.ToString("F2", CultureInfo.InvariantCulture));
         }
     }
 }
