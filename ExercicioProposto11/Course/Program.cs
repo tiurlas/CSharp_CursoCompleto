@@ -37,18 +37,12 @@ namespace Course
                 }
             }
 
+            double sum = 0.0;
             Console.WriteLine();
             Console.WriteLine("TAXES PAID:");
             foreach (TaxPayer taxPayer in list)
             {
-                Console.WriteLine(taxPayer.Name
-                    + ": $ "
-                    + taxPayer.Tax().ToString("F2", CultureInfo.InvariantCulture));
-            }
-
-            double sum = 0.0 ;
-            foreach (TaxPayer taxPayer in list)
-            {
+                Console.WriteLine(taxPayer.Name + ": $ " + taxPayer.Tax().ToString("F2", CultureInfo.InvariantCulture));
                 sum += taxPayer.Tax();
             }
 
