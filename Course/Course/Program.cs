@@ -1,23 +1,40 @@
-﻿using System;
-using System.IO;
+﻿using Course.Entities;
+using System;
 
 public class ProcessFile {
     public static void Main() {
 
-        FileStream fs = null;
-        try {
-            fs = new FileStream(@"C:\temp\data.txt", FileMode.Open);
-            StreamReader sr = new StreamReader(fs);
-            string line = sr.ReadLine();
-            Console.WriteLine(line);
+        Console.Write("Room number: ");
+        int number = int.Parse(Console.ReadLine());
+        Console.Write("Check-in date (dd/MM/yyyy): ");
+        DateTime checkIn = DateTime.Parse(Console.ReadLine());
+        Console.Write("Check-out date (dd/MM/yyyy): ");
+        DateTime checkOut = DateTime.Parse(Console.ReadLine());
+
+        if (checkOut <= checkIn) {
+            Console.WriteLine("Error in reservation: Check-out date must be after check-in date");
         }
-        catch (FileNotFoundException e) {
-            Console.WriteLine(e.Message);
-        }
-        finally {
-            if (fs != null) {
-                fs.Close();
+        else {
+            Reservation reservation = new Reservation(number, checkIn, checkOut);
+            Console.WriteLine("Resevation: " + reservation);
+
+            Console.WriteLine();
+            Console.WriteLine("Enter data to update the reservation:");
+            Console.Write("Check-in date (dd/MM/yyyy): ");
+            checkIn = DateTime.Parse(Console.ReadLine());
+            Console.Write("Check-out date (dd/MM/yyyy): ");
+            checkOut = DateTime.Parse(Console.ReadLine());
+
+            DateTime now = DateTime.Now;
+            if (checkIn < now || checkOut < now) {
+                Console.WriteLine("Error in reservation: Reservation dates for update must be future dates");
+            }
+            else if (checkOut <= checkIn) {
+                reservation.UpdateDates(checkIn, checkOut);
+                Console.WriteLine("Reservation: " + reservation);
+
             }
         }
+        
     }
 }
